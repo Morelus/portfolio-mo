@@ -1,8 +1,10 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Shadows+Into+Light&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
 * {
-    margin:0;
+    margin:auto;
     padding: 0;
 }
 
@@ -19,6 +21,7 @@ html {
 
 p {
     color: rgb(255 155 217);
+    font-family: 'Old Standard TT', serif;
 }
 
 a, .btn {
@@ -38,12 +41,12 @@ nav {
     gap: 2rem;
     font-size: 1.5rem;
     text-decoration: none;
+    list-style: none;
 }
 
 a {
     color: rgb(255 155 217);
     text-decoration: none;
-    text-decoration-color: rgb(255 155 217);
 }
 
 a:hover {
@@ -57,6 +60,14 @@ a:hover {
     font-size: 2rem;
 }
 
+
+.line {
+    width: 150px;
+    height: 6px;
+    background: rgb(206, 31, 139);
+    margin: 10px auto;
+    border-radius: 5px;
+}
 .logo:hover {
     cursor: default;
 }
@@ -115,15 +126,15 @@ a:hover {
     max-height: 300px;
 }
 
-.hamburger-icon-open span:first-child {
+.hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
 }
 
-.hamburger-icon-open span:nth-child(2) {
+.hamburger-icon.open span:nth-child(2) {
    opacity: 0;
 }
 
-.hamburger-icon-open span:last-child {
+.hamburger-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
 }
 
@@ -140,8 +151,8 @@ a:hover {
 }
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
+    padding-top: 8vh;
+    height: fit-content;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -149,6 +160,7 @@ section {
 
 .section-container {
     display: flex;
+    margin-bottom: 20px;
 }
 
 #profile {
@@ -160,11 +172,17 @@ section {
 
 .section__pic-container {
     display:flex;
-    height: 400px;
+    height: 800px;
     width: 400px;
     margin: auto 0;
+    margin-bottom: 50px;
 }
 
+.section__pic-container2 img{
+    height: auto;
+    width: 90%;
+ 
+}
 .section__text {
     align-self: center;
     text-align: center;
@@ -176,11 +194,12 @@ section {
 
 .section__text__p1 {
     text-align: center;
-    gap: 2rem;
+    padding: 10px;
+    /* gap: 2rem;
     margin-top: 4rem;
     content: "";
     display: block;
-    height: 1rem;
+    height: 1rem; */
 }
 
 .section__text__p2 {
@@ -203,12 +222,15 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+    border : rgb(255 155 217) 0.1rem solid; 
+    border-radius: 2rem;
 }
 
+
 .btn-container {
-    /* display: flex; */
+    display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 1rem;
 }
 
 .btn {
@@ -250,12 +272,18 @@ section {
 
 #about {
     position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: fit-content;
+    /* box-sizing: border-box; */
 }
 
 .about-containers {
    gap: 4rem;
-   margin-bottom: 2rem;
+   /* margin-bottom: 2rem; */
    margin-top: 2rem;
+   display: flex;
+   height: 100%;
 }
 
 .about-details-container {
@@ -271,25 +299,31 @@ section {
     border-radius: 2rem;
 }
 
-.arrow {
+/* .arrow {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
-}
+} */
 
 .details-container {
-    padding: 1.5rem;
-    flex: 1;
+    padding: .5rem;
+    flex: .5;
     background: white;
     border-radius: 2rem;
     border: white 0.1rem solid;
     border-color: azure;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.details-container > * {
+    flex: 1;
 }
 
 .section-container{
     gap: 6rem;
-    height: 90%;
+    height: 80%;
 }
 
 .section__pic-container {
@@ -299,13 +333,14 @@ section {
 }
 
 #experience {
-    position: relative;
+    position:relative ;
+    box-sizing: border-box;
 }
 
 .experience-sub-title {
     color:rgb(0, 0, 0);
-    /* font-weight: 600;
-    font-size: 1.75rem; */
+    font-weight: 600;
+    font-size: 1.75rem;
     margin-bottom: 2rem;
 }
 
@@ -317,7 +352,7 @@ section {
 
 .article-container {
     display: flex; 
-    text-align: initial;
+    text-align: center;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
@@ -335,6 +370,12 @@ article .icon {
     cursor: default;
 }
 
+.laptops img{
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+
+}
 #projects {
     position: relative;
 }
@@ -346,8 +387,8 @@ article .icon {
 
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
 }
 
 .project-title {
@@ -364,6 +405,7 @@ article .icon {
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    box-sizing: border-box;
 }
 
 .contact-info-upper-container {
@@ -372,6 +414,7 @@ article .icon {
     border-radius: 4rem;
     border:rgb(206, 31, 139);
     background-color: rgb(0, 0, 0);
+    margin: 2rem auto;
     padding: 0.5rem;
 }
 
