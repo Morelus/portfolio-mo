@@ -251,7 +251,7 @@ section {
 
 .btn-color-1, .btn-color-2:hover {
     background: rgb(206, 31, 139);
-    color: white;
+    color: rgb(206, 31, 139);
 }
 
 .btn-color-1:hover {
