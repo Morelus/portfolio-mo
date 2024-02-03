@@ -179,7 +179,7 @@ section {
 }
 
 .section__pic-container2 img{
-    height: 80vh;
+    /* height: 80vh; */
     width: 90%;
  
 }
