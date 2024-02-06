@@ -169,7 +169,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: 70vh;
 }
 
 .section__pic-container {
@@ -182,7 +182,7 @@ section {
 
 .section__pic-container2 img{
     /* height: 80vh; */
-    width: 90%;
+    width: 80%;
  
 }
 .section__text {
@@ -220,14 +220,17 @@ section {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    gap: 4rem
+    gap: 1rem;
+    border:rgb(206, 31, 139);
 }
 
 .icon {
     cursor: pointer;
     height: 2rem;
-    border : rgb(255 155 217) 0.1rem solid; 
-    border-radius: 2rem;
+    border : rgb(210, 23, 138) 0.1rem solid; 
+    border-radius: 9rem;
+    height: 44px;
+    width: 54px;
 }
 
 
@@ -276,7 +279,7 @@ section {
 
 #about {
     position: relative;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 10px;
     height: fit-content;
     /* box-sizing: border-box; */
@@ -285,9 +288,13 @@ section {
 .about-containers {
    gap: 4rem;
    /* margin-bottom: 2rem; */
-   margin-top: 2rem;
+   margin-top: 1rem;
    display: flex;
    height: 100%;
+}
+
+.text-container img{
+    justify-content: center;
 }
 
 .about-details-container {
@@ -303,20 +310,21 @@ section {
     border-radius: 2rem;
 }
 
-/* .arrow {
+.arrow {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
-} */
+    color: deeppink;
+}
 
 .details-container {
-    padding: .5rem;
+    padding: 1rem;
     flex: .5;
     background: white;
     border-radius: 2rem;
-    border: white 0.1rem solid;
-    border-color: azure;
-    text-align: center;
+    border: rgb(206, 31, 139) 0.1rem solid;
+    border-color:rgb(206, 31, 139);
+    text-align: ;
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -361,6 +369,11 @@ section {
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
+    
+}
+
+.article-container h3{
+ color: deeppink;
 }
 
 article {
@@ -375,18 +388,19 @@ article .icon {
 }
 
 .laptops img{
-    max-width: 100%;
-    height: 90px;
-    max-height: 100px;
+    width: 490px;
+    height: 280px;
 
 }
 #projects {
     position: relative;
+    padding-top: 10px ;
 }
 
 .color-container {
     border-color:rgb(206, 31, 139);
     background: white;
+
 }
 
 .project-img {
@@ -414,14 +428,16 @@ article .icon {
 
 .contact-info-upper-container {
     display: flex;
-    justify-content: center;
     border-radius: 4rem;
     border:rgb(206, 31, 139);
     background-color: rgb(0, 0, 0);
     margin: 2rem auto;
     padding: 0.5rem;
 }
-
+.contact-info-upper-container img {
+    justify-content: center;
+    gap: 4rem;
+}
 .contact-info-container p {
 font-size: medium;
 }
